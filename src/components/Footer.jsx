@@ -45,16 +45,16 @@ const Footer = () => {
                             Your trusted local grocery store offering fresh fruits, vegetables, and everyday essentials in Bacchus Marsh.
                         </p>
                         <div className="flex space-x-3">
-                            <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cream/40 hover:text-brand-primary hover:bg-white/10 transition-all duration-300">
+                            <a href="https://www.facebook.com/profile.php?id=61579670395710" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cream/40 hover:text-brand-primary hover:bg-white/10 transition-all duration-300">
                                 <Facebook size={16} />
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cream/40 hover:text-brand-primary hover:bg-white/10 transition-all duration-300">
+                            <a href="https://www.instagram.com/harvesth0use/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cream/40 hover:text-brand-primary hover:bg-white/10 transition-all duration-300">
                                 <Instagram size={16} />
                             </a>
-                            {/* Variable 'Twitter' is now used here */}
-                            <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cream/40 hover:text-brand-primary hover:bg-white/10 transition-all duration-300">
+                            {/* Twitter icon commented out */}
+                            {/* <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-brand-cream/40 hover:text-brand-primary hover:bg-white/10 transition-all duration-300">
                                 <Twitter size={16} />
-                            </a>
+                            </a> */}
                         </div>
                     </motion.div>
 
@@ -65,7 +65,8 @@ const Footer = () => {
                             <li><Link to="home" smooth={true} className="text-brand-cream/60 hover:text-white cursor-pointer transition-colors flex items-center gap-2 px-1">Home</Link></li>
                             <li><Link to="about" smooth={true} className="text-brand-cream/60 hover:text-white cursor-pointer transition-colors flex items-center gap-2 px-1">About Us</Link></li>
                             <li><Link to="products" smooth={true} className="text-brand-cream/60 hover:text-white cursor-pointer transition-colors flex items-center gap-2 px-1">Store Products</Link></li>
-                            <li><Link to="testimonials" smooth={true} className="text-brand-cream/60 hover:text-white cursor-pointer transition-colors flex items-center gap-2 px-1">Customer Reviews</Link></li>
+                            {/* Customer Reviews link commented out */}
+                            {/* <li><Link to="testimonials" smooth={true} className="text-brand-cream/60 hover:text-white cursor-pointer transition-colors flex items-center gap-2 px-1">Customer Reviews</Link></li> */}
                         </ul>
                     </motion.div>
 
@@ -89,11 +90,11 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-white/40 font-bold uppercase tracking-tighter w-8">Tel:</span>
-                                <span>+61 449 891 019</span>
+                                <span>+61 *** *** ***</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-white/40 font-bold uppercase tracking-tighter w-8">Mail:</span>
-                                <span className="truncate">harvesthouseaustralia@gmail.com</span>
+                                <span className="truncate">contactus@harvesthouseaustralia.com.au</span>
                             </li>
                         </ul>
                     </motion.div>

@@ -7,7 +7,7 @@ const navLinks = [
     { name: 'Home', to: 'home' },
     { name: 'About', to: 'about' },
     { name: 'Products', to: 'products' },
-    { name: 'Testimonials', to: 'testimonials' },
+    // { name: 'Testimonials', to: 'testimonials' },
     { name: 'Location', to: 'location' },
     { name: 'Contact', to: 'contact' },
 ];
@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+            className={`fixed w-full z-50 top-[34px] transition-all duration-300 ${isScrolled
                 ? 'bg-brand-cream/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] py-3 border-b border-white/20'
                 : 'bg-transparent py-5'
                 }`}

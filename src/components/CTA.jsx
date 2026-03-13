@@ -34,7 +34,7 @@ const CTA = () => {
                         "Delivering the finest local produce directly to your kitchen."
                     </p>
                     <p className="text-lg text-gray-500 mb-10 max-w-2xl mx-auto font-normal">
-                        Experience the premium quality and exceptional service of Harvest House. Proudly serving the Bacchus Marsh community.
+                        Experience the premium quality and exceptional service of Harvest House. Proud to be serving the Bacchus Marsh community.
                     </p>
 
                     <Link to="location" smooth={true} duration={500} offset={-80}>

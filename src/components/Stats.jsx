@@ -36,7 +36,7 @@ const statsData = [
     {
         id: 1,
         title: "Fresh Products",
-        value: 500,
+        value: 100,
         suffix: "+",
         icon: <Store className="w-5 h-5 text-brand-primary" />,
     },
@@ -47,20 +47,7 @@ const statsData = [
         suffix: "+",
         icon: <MapPin className="w-5 h-5 text-brand-leaf" />,
     },
-    {
-        id: 3,
-        title: "Happy Customers",
-        value: 10,
-        suffix: "K+",
-        icon: <Users className="w-5 h-5 text-brand-wheat" />,
-    },
-    {
-        id: 4,
-        title: "Daily Deliveries",
-        value: 100,
-        suffix: "+",
-        icon: <ThumbsUp className="w-5 h-5 text-brand-primary" />,
-    }
+    
 ];
 
 const containerVariants = {
@@ -78,7 +65,7 @@ const Stats = () => {
         <section className="py-4 bg-brand-cream/50 relative z-10 w-full border-y border-gray-100/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div 
-                    className="flex flex-wrap md:flex-nowrap justify-around items-center gap-4 md:gap-2"
+                    className="flex flex-wrap md:flex-nowrap justify-center items-center gap-8 md:gap-20"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"

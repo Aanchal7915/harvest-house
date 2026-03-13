@@ -59,7 +59,7 @@ const About = () => {
                         </h3>
                         <div className="w-16 h-1 bg-brand-primary mb-8 rounded-full opacity-30"></div>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                            Harvest House is a trusted local grocery store in Bacchus Marsh offering fresh fruits, vegetables, and everyday grocery essentials.
+                            Harvest House is a newest local grocery store in Bacchus Marsh offering fresh fruits, vegetables, and everyday grocery essentials.
                         </p>
                         <p className="text-gray-600 leading-relaxed mb-8 text-sm sm:text-base">
                             We focus on providing high-quality produce sourced from trusted suppliers and local farms. Our mission is to bring the freshest ingredients straight to your family's table, ensuring natural taste and peak nutrition in every bite.
