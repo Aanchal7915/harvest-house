@@ -1,10 +1,10 @@
 import React from 'react';
 
 const messages = [
-    "Harvest House is Coming Soon to Bacchus Marsh — Fresh Fruits & Vegetables at Your Doorstep!",
-    "Stay Tuned — We're Almost Ready to Serve You the Freshest Local Produce!",
-    "Opening Very Soon — Handpicked Freshness, Authentic Taste. Watch This Space!",
-    "Fresh from Local Farms — Harvest House Opens Soon in Bacchus Marsh!",
+    "Harvest House is Opening Soon in Bacchus Marsh — Fresh Fruits & Vegetables at Your Doorstep.",
+    "Harvest House — Your Neighbourhood Fresh Produce Store. Coming Very Soon to Bacchus Marsh.",
+    "Handpicked. Farm-Fresh. Local. Harvest House is Almost Here — Watch This Space.",
+    "Fresh from Local Farms to Your Table — Harvest House Opening Soon in Bacchus Marsh.",
 ];
 
 const TopBanner = () => {

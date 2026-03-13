@@ -69,9 +69,9 @@ const Location = () => {
                             <div className="flex items-start">
                                 <Clock className="w-6 h-6 text-brand-wheat mr-4 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h5 className="font-semibold text-brand-dark mb-1">Coming Soon </h5>
-                                    <p className="text-gray-600">Mon-Fri: 7am - 7pm</p>
-                                    <p className="text-gray-600">Sat-Sun: 7am - 5pm</p>
+                                    <h5 className="font-semibold text-brand-dark mb-1">Opening Hours </h5>
+                                    <p className="text-gray-600">Coming Soon</p>
+            
                                 </div>
                             </div>
 
