@@ -83,11 +83,13 @@ const Location = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-start">
+                            <div className="flex items-start w-full">
                                 <Mail className="w-6 h-6 text-brand-primary mr-4 mt-1 flex-shrink-0" />
-                                <div>
+                                <div className="w-[calc(100%-40px)]">
                                     <h5 className="font-semibold text-brand-dark mb-1">Email</h5>
-                                    <p className="text-gray-600">contactus@harvesthouseaustralia.com.au</p>
+                                    <a href="mailto:contactus@harvesthouseaustralia.com.au" className="text-gray-600 hover:text-brand-primary transition-colors text-[11px] min-[370px]:text-xs sm:text-base whitespace-nowrap tracking-tight">
+                                        contactus@harvesthouseaustralia.com.au
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -26,7 +26,7 @@ const TopBanner = () => {
 
             <style>{`
                 .marquee-track {
-                    animation: marquee-scroll 35s linear infinite;
+                    animation: marquee-scroll 15s linear infinite;
                     will-change: transform;
                 }
                 .marquee-track:hover {
