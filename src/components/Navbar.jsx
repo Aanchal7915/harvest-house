@@ -15,6 +15,20 @@ const navLinks = [
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [bannerHeight, setBannerHeight] = useState(34);
+
+    useEffect(() => {
+        // Measure actual banner height for mobile accuracy
+        const updateBannerHeight = () => {
+            const banner = document.querySelector('[data-banner]');
+            if (banner) {
+                setBannerHeight(banner.offsetHeight);
+            }
+        };
+        updateBannerHeight();
+        window.addEventListener('resize', updateBannerHeight);
+        return () => window.removeEventListener('resize', updateBannerHeight);
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,10 +40,12 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 top-[34px] transition-all duration-300 ${isScrolled
-                ? 'bg-brand-cream/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] py-3 border-b border-white/20'
-                : 'bg-transparent py-5'
-                }`}
+            style={{ top: `${bannerHeight}px` }}
+            className={`fixed w-full z-50 transition-all duration-300 ${
+                isScrolled
+                    ? 'bg-brand-cream/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] py-3 md:border-b md:border-white/20'
+                    : 'bg-transparent py-5'
+            }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">

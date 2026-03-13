@@ -11,7 +11,7 @@ const TopBanner = () => {
     const repeated = [...messages, ...messages]; // duplicate for seamless loop
 
     return (
-        <div className="fixed top-0 left-0 w-full overflow-hidden bg-brand-primary z-[60] py-2 select-none">
+        <div data-banner className="fixed top-0 left-0 w-full overflow-hidden bg-brand-primary z-[60] py-2 select-none">
             <div className="marquee-track flex whitespace-nowrap">
                 {repeated.map((msg, i) => (
                     <span
@@ -26,7 +26,7 @@ const TopBanner = () => {
 
             <style>{`
                 .marquee-track {
-                    animation: marquee-scroll 15s linear infinite;
+                    animation: marquee-scroll 8s linear infinite;
                     will-change: transform;
                 }
                 .marquee-track:hover {
@@ -35,6 +35,11 @@ const TopBanner = () => {
                 @keyframes marquee-scroll {
                     0%   { transform: translateX(0); }
                     100% { transform: translateX(-50%); }
+                }
+                @media (min-width: 768px) {
+                    .marquee-track {
+                        animation-duration: 15s;
+                    }
                 }
             `}</style>
         </div>
